@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-1: #100733;
+    --cor-2: #342863;
+    --cor-3: #675A96;
+    --cor-4: #A9A1C9;
+    --cor-5: #D4CAFC;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(root) {
+    animation-duration: 1s;
+}
+
+::view-transition-old(principal) {
+  animation-name: deslizar-saindo;
+}
+
+::view-transition-new(principal) {
+  animation-name: deslizar-entrando;
+}
+
+@keyframes deslizar-saindo{
+  to{
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+}
+
+@keyframes deslizar-entrando{
+  from{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: var(--cor-1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-3);
+    padding: 13px;
+    margin-bottom: 50px;
+    max-height: 48px;
+    box-shadow: 0 1px 8px var(--cor-3);
+
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav > a {
+    position: relative;
+    color: var(--cor-5);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav>a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    bottom: -2px;
+    left: 0;
+    background-color: var(--cor-5);
+    transition: 0.35s;
+}
+
+nav>a:hover::after {
+    transform: scale(1);
+}
+
+main {
+    display: flex;
+    background-color: var(--cor-4);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 600px;
+    height: 600px;
+    margin: auto;
+    border: 2px solid rgba(255, 255, 255, 0.200);
+    border-radius: 10px;
+    box-shadow: 0 0 8px var(--cor-5);
+    color: var(--cor-1);
+    font-weight: bold;
+    view-transition-name: principal;
+}
+
+p {
+    margin: 40px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#contato {
+    height: 250px;
+}
+
+#curriculo {
+    align-items: start;
+    height: 600px;
+    max-width: 708px;
+    padding: 0 35px 0 35px;
+}
+
+#curriculo>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 15px;
+}
+
+#curriculo>ul>li {
+    font-size: 1.1em;
+    line-height: 2.4em;
+    text-align: justify;
+}
+
+#curriculo > h1{
+  color: var(--cor-2);
+}
+
+img {
+    height: 50%;
+    width: 50%;
+    padding: 1.3px;
+    background-color: black;
+    border: 7px solid var(--cor-3);
+    border-radius: 50%;
+    object-fit: fill;
+    box-shadow: 0px 0px 10px var(--cor-3);
+}
