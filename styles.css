@@ -149,6 +149,6 @@ img {
     background-color: black;
     border: 7px solid var(--cor-3);
     border-radius: 50%;
-    object-fit: fill;
+    object-fit: cover;
     box-shadow: 0px 0px 10px var(--cor-3);
 }
