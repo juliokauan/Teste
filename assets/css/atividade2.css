@@ -3,56 +3,56 @@
     margin: 0;
 }
 
-.divClass{
+.divClass {
     float: left;
     margin: 10px;
     box-sizing: border-box;
     border: 1px solid black;
 }
 
-#div1{
+#div1 {
     height: 300px;
     width: 500px;
 }
 
-#div2{
+#div2 {
     height: 200px;
     width: 400px;
 }
 
-#div3{
+#div3 {
     height: 400px;
     width: 550px;
 }
 
-#div4{
+#div4 {
     clear: left;
     height: 100px;
     width: 400px;
 }
 
-#div5{
+#div5 {
     height: 100px;
     width: 400px;
 }
 
-#div6{
+#div6 {
     height: 100px;
     width: 400px;
 }
 
-#div7{
+#div7 {
     clear: left;
     height: 300px;
     width: 500px;
 }
 
-#div8{
+#div8 {
     height: 100px;
     width: 300px;
 }
 
-#div9{
+#div9 {
     height: 180px;
     width: 700px;
 }

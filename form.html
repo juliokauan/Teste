@@ -5,49 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <header>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="curriculo.html">Currículo</a>
-        <a href="contato.html">Contato</a>
-        <a href="atividades.html">Atividades</a>
-      </nav>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="contato.html">Contato</a>
+            <a href="atividades.html">Atividades</a>
+        </nav>
     </header>
-    <main id = "form">
-        <form id = "formulario">
-            <div id = "div_nome">
+    <main id="form">
+        <form id="formulario">
+            <div id="div_nome">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" class="input_text" placeholder = "Clebinho da Silva" required>
+                <input type="text" id="nome" name="nome" class="input_text" placeholder="Clebinho da Silva">
             </div>
-            <div id = "div_email">
+            <div id="div_email">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" class="input_text" placeholder = "jorgecaminhões@gmail.com" required>
+                <input type="email" id="email" name="email" class="input_text" placeholder="jorgecaminhões@gmail.com">
             </div>
-            <div id = "div_telefone">
+            <div id="div_telefone">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" pattern = "\(\d{2}\) \d{5}-\d{4}" placeholder = "(00) 00000-0000" class = "input_text" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" class="input_text">
             </div>
-            <div id = "div_recrutador">
-                <label for = "recrutador">Você é um recrutador?</label> <br>
-                <input type="radio" id = "sim" name = "recrutador" value = "sim" checked>
-                <label for = "sim">Sim</label>
-                <input type="radio" id = "nao" name = "recrutador" value = "nao">
-                <label for = "nao">Não</label>
+            <div id="div_recrutador">
+                <label for="recrutador">Você é um recrutador?</label> <br>
+                <input type="radio" id="sim" name="recrutador" value="sim" checked>
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="recrutador" value="nao">
+                <label for="nao">Não</label>
             </div>
-            <textarea id = "mensagem" name = "mensagem" placeholder = "Digite sua mensagem aqui..."></textarea>
-            <input type="submit" value="Enviar" id = "botao_enviar">
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+            <input type="submit" value="Enviar" id="botao_enviar">
         </form>
-        <div id = "fundo_escuro">
-            <div id = "container_sucesso">
-                <button id = "botao_fechar">×</button>
+        <div id="fundo_escuro">
+            <div id="container_sucesso">
+                <button id="botao_fechar">×</button>
                 Formulário enviado com sucesso!
             </div>
         </div>
     </main>
-    <script src="form_script.js"></script>
+    <script src="assets/js/form_script.js"></script>
 </body>
+
 </html>
