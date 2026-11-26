@@ -20,25 +20,25 @@
 }
 
 ::view-transition-old(principal) {
-  animation-name: deslizar-saindo;
+    animation-name: deslizar-saindo;
 }
 
 ::view-transition-new(principal) {
-  animation-name: deslizar-entrando;
+    animation-name: deslizar-entrando;
 }
 
-@keyframes deslizar-saindo{
-  to{
-    opacity: 0;
-    transform: translateX(-80px);
-  }
+@keyframes deslizar-saindo {
+    to {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
 }
 
-@keyframes deslizar-entrando{
-  from{
-    opacity: 0;
-    transform: translateX(80px);
-  }
+@keyframes deslizar-entrando {
+    from {
+        opacity: 0;
+        transform: translateX(80px);
+    }
 }
 
 body {
@@ -59,27 +59,27 @@ header {
 }
 
 nav {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-#contato a{
+#contato a {
     transition: 100ms;
 }
 
-#contato a:hover{
+#contato a:hover {
     color: red;
 }
 
-#contato a:active{
+#contato a:active {
     color: black;
 }
 
-nav > a {
+nav>a {
     position: relative;
     color: var(--cor-5);
     font-weight: bold;
@@ -127,7 +127,7 @@ p {
 }
 
 #contato {
-    height: 250px;
+    height: 300px;
 }
 
 #curriculo {
@@ -150,8 +150,8 @@ p {
     text-align: justify;
 }
 
-#curriculo > h1{
-  color: var(--cor-2);
+#curriculo>h1 {
+    color: var(--cor-2);
 }
 
 img {
@@ -170,22 +170,22 @@ img {
     margin-bottom: 10px;
 }
 
-#form{
+#form {
     font-size: 1.5em;
 }
 
-input{
+input {
     margin: 15px;
     color: black;
     background-color: var(--cor-5);
     border: 1px solid var(--cor-3);
 }
 
-input[type="radio"]{
+input[type="radio"] {
     margin: 15px 5px;
 }
 
-.input_text{
+.input_text {
     width: 300px;
     height: 10px;
     padding: 10px;
@@ -193,7 +193,7 @@ input[type="radio"]{
     box-shadow: 0px 0px 2px var(--cor-3);
 }
 
-textarea{
+textarea {
     width: 100%;
     height: 200px;
     padding: 10px;
@@ -203,7 +203,7 @@ textarea{
     text-indent: 10px;
 }
 
-#botao_enviar{
+#botao_enviar {
     display: block;
     margin: auto;
     margin-top: 25px;
@@ -215,15 +215,15 @@ textarea{
     background-color: var(--cor-3);
 }
 
-#botao_enviar:hover{
+#botao_enviar:hover {
     background-color: var(--cor-2);
 }
 
-#botao_enviar:active{
+#botao_enviar:active {
     background-color: var(--cor-1);
 }
 
-#container_sucesso{
+#container_sucesso {
     display: none;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,7 @@ textarea{
     border-radius: 5px;
 }
 
-#botao_fechar{
+#botao_fechar {
     display: flex;
     position: absolute;
     justify-content: center;
@@ -254,16 +254,16 @@ textarea{
     border-radius: 50%;
 }
 
-#botao_fechar:hover{
+#botao_fechar:hover {
     background-color: var(--cor-3);
 }
 
-#botao_fechar:active{
+#botao_fechar:active {
     background-color: var(--cor-2);
     color: var(--cor-5);
 }
 
-.fundo_escuro{
+.fundo_escuro {
     position: fixed;
     top: 0;
     left: 0;
@@ -272,4 +272,49 @@ textarea{
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
+}
+
+#atividadeMain {
+    justify-content: left;
+}
+
+#atividadeMain h1 {
+    margin-top: 50px;
+}
+
+#atividadeMain input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--cor-5);
+    border-radius: 10px;
+    border: 1px solid var(--cor-2);
+    margin: 10px;
+    transition: 0.1s ease-in;
+}
+
+button:hover {
+    background-color: var(--cor-3);
+    border: 1px solid var(--cor-3);
+}
+
+button:active {
+    background-color: var(--cor-1);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+span {
+    cursor: pointer;
+    margin-left: 10px;
 }
